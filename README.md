@@ -1,6 +1,6 @@
 # sling-content-distribution-solr
 
-Solr ingestion using sling content distribution example built for AEM 6.3 (though there are no dependencies so it should run on plain sling as well)
+Solr ingestion using sling content distribution example built for AEM 6.3. There are no dependencies to AEM so it will probably also run fine one any kind of Sling application, though the setup might differ slightly. 
 
 ## Goal
 
