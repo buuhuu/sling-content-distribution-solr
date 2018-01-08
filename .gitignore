@@ -1,6 +1,8 @@
+/aem/
+/aem-publish/
+/solr/
+
 target/
-aem/
-aem-publish/
-solr/
+
 .idea/
 *.iml
