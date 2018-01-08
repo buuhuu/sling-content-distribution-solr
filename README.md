@@ -16,6 +16,12 @@ Sling Content Distribution (esp forward distribution) supports a lot of features
 
 all of that perfeclty fits for the usecase to integrate sling into solr by sending adds and removes in a guaranteed order from sling to solr.
 
+## Why?
+
+- For some requirmenets AEM's (Sling's, Oak's) fulltext search capabilities are not sufficient (OAK-6597, OAK-7109 to name only a few)
+- AEM's internal indexes are always on technical, storage level not on business level
+- Standalone (isolated) search solutions of much more flexibility to configure and tune to get the best results (not only for fulltext search but also other search based applications)
+
 ## Required changes on top of Sling Content Distribution Core 0.2.11-SNAPSHOT and Jackrabbit File Vault 3.1.43-SNAPSHOT
 
 - https://issues.apache.org/jira/browse/JCRVLT-257
