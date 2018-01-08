@@ -22,6 +22,12 @@ all of that perfeclty fits for the usecase to integrate sling into solr by sendi
 - AEM's internal indexes are always on technical, storage level not on business level
 - Standalone (isolated) search solutions of much more flexibility to configure and tune to get the best results (not only for fulltext search but also other search based applications)
 
+## Who
+
+- In sling-content-distribution-solr-bundle there is a DistributionPackageSerializer implemented that writes changes (add, remove) to solr-json format according to https://lucene.apache.org/solr/guide/7_2/uploading-data-with-index-handlers.html
+- The serializer in that example only writes the exported resource's name and path but that can be anything, for example defined by a service implemention and/or a Sling Model
+- In sling-content-distribution-solr-bundle there is an extension of solr's UpdateRequestHandler implemented that can process the binary stream written by Sling Content Distribution (independently from the serializer)
+
 ## Required changes on top of Sling Content Distribution Core 0.2.11-SNAPSHOT and Jackrabbit File Vault 3.1.43-SNAPSHOT
 
 - https://issues.apache.org/jira/browse/JCRVLT-257
@@ -32,7 +38,7 @@ all of that perfeclty fits for the usecase to integrate sling into solr by sendi
 
 ## Setup
 
-Configure solr to use the SCDUpdateRequestHandler, for example by putting the following configuration into your solrconfig.xml
+Configure solr to use the SCDUpdateRequestHandler, for example by putting the following configuration into your solrconfig.xml (make sure to load the sling-content-distribution-solr-loader as lib)
 
 ```
 <requestHandler name="/update/scd" class="com.github.buuhuu.solr.handler.SCDUpdateRequestHandler" />
