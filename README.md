@@ -36,6 +36,6 @@ After depoloying the **sling-content-distribution-solr-bundle**:
 
 - Configure a new Package Builder Factory (either file or resource) with the format solr-json
 - Configure a Distribution Event Trigger (for example for path /content)
-- Configure a new Forward Distribution Agent that uses the previously created package builder and trigger
+- Configure a new Forward Distribution Agent that uses the previously created package builder and trigger with its endpoint pointing to the SCDUpdateRequestHandler configured above: http://localhost:8983/solr/aem/update/scd?commitWithin=1000
 
 Next configure AEM's default replication action to use sling content distribution and replicate something
