@@ -22,7 +22,7 @@ all of that perfeclty fits for the usecase to integrate sling into solr by sendi
 - AEM's internal indexes are always on technical, storage level not on business level
 - Standalone (isolated) search solutions of much more flexibility to configure and tune to get the best results (not only for fulltext search but also other search based applications)
 
-## Who
+## How?
 
 - In sling-content-distribution-solr-bundle there is a DistributionPackageSerializer implemented that writes changes (add, remove) to solr-json format according to https://lucene.apache.org/solr/guide/7_2/uploading-data-with-index-handlers.html
 - The serializer in that example only writes the exported resource's name and path but that can be anything, for example defined by a service implemention and/or a Sling Model
