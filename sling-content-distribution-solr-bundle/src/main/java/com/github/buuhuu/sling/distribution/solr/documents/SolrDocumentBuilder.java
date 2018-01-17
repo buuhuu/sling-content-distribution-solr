@@ -5,7 +5,7 @@ import java.util.Iterator;
 import org.apache.sling.api.resource.Resource;
 
 /**
- * Implementations of that provider interface are responsible creating documents, represented as {@link Iterator} of {@link SolrField} for
+ * Implementations of that provider interface are responsible for creating documents, represented as {@link Iterator} of {@link SolrField} for
  * a given {@link Resource}.
  */
 public interface SolrDocumentBuilder {
