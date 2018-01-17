@@ -44,6 +44,8 @@ Configure solr to use the SCDUpdateRequestHandler, for example by putting the fo
 <requestHandler name="/update/scd" class="com.github.buuhuu.solr.handler.SCDUpdateRequestHandler" />
 ```
 
+Note: the above is not necessary anymore with the change proposed in https://github.com/apache/sling-org-apache-sling-distribution-core/pull/6
+
 After depoloying the **sling-content-distribution-solr-bundle**:
 
 - Configure a new Package Builder Factory (either file or resource) with the format solr-json
