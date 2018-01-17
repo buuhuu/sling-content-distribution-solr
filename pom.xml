@@ -11,6 +11,7 @@
 
     <modules>
         <module>sling-content-distribution-solr-bundle</module>
+        <module>sling-content-distribution-solr-weretail</module>
         <module>sling-content-distribution-solr-loader</module>
     </modules>
 
